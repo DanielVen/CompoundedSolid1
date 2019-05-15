@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation 0 1 0 0
-  position 0.1415363475592694 0.5571674658657522 1.2899458876823662
+  orientation -0.687965217408576 -0.7181930374775928 -0.1044156145156463 0.4165282091069946
+  position -0.42411764907534966 0.8301464843207143 1.3713220171043927
 }
 TexturedBackground {
 }
@@ -101,6 +101,42 @@ Solid {
         DEF S_CYL4 Transform {
           translation 0.17 -0.16999999999999998 0
           rotation 0 0 1 1.5707996938995747
+          children [
+            Shape {
+              appearance USE C1
+              geometry Cylinder {
+                height 0.2
+                radius 0.03
+              }
+            }
+          ]
+        }
+        DEF S_CYL5 Transform {
+          translation 0 0.17 0.16999999999999998
+          rotation 1 0 0 -1.5707996938995747
+          children [
+            Shape {
+              appearance USE C1
+              geometry Cylinder {
+                height 0.2
+                radius 0.03
+              }
+            }
+          ]
+        }
+        DEF S_SPHERE5 Transform {
+          translation 0 0.17 0.34
+          children [
+            Shape {
+              appearance USE A_1
+              geometry Sphere {
+                radius 0.08
+              }
+            }
+          ]
+        }
+        DEF S_CYL6 Transform {
+          translation 0 0 0.34
           children [
             Shape {
               appearance USE C1
