@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.687965217408576 -0.7181930374775928 -0.1044156145156463 0.4165282091069946
-  position -0.42411764907534966 0.8301464843207143 1.3713220171043927
+  orientation -0.49715093729024595 -0.8544118406590178 -0.15106737600520828 0.6833875461359369
+  position -0.6908629310907288 1.0548069108823825 1.6103053890081562
 }
 TexturedBackground {
 }
@@ -18,8 +18,7 @@ Solid {
       children [
         DEF S_CYL1 Shape {
           appearance DEF C1 PBRAppearance {
-            baseColor 0.12549019607843137 0.2901960784313726 0.5294117647058824
-            transparency 0.2
+            baseColor 0.9333333333333333 0.9333333333333333 0.9254901960784314
           }
           geometry Cylinder {
             height 0.19999999999999998
@@ -31,8 +30,7 @@ Solid {
           children [
             Shape {
               appearance DEF A_1 PBRAppearance {
-                baseColor 0.8 0 0
-                transparency 0.2
+                baseColor 0.12549019607843137 0.2901960784313726 0.5294117647058824
               }
               geometry Sphere {
                 radius 0.08
@@ -137,6 +135,116 @@ Solid {
         }
         DEF S_CYL6 Transform {
           translation 0 0 0.34
+          children [
+            Shape {
+              appearance USE C1
+              geometry Cylinder {
+                height 0.2
+                radius 0.03
+              }
+            }
+          ]
+        }
+        DEF S_SPHERE6 Transform {
+          translation 0 -0.17 0.34
+          children [
+            Shape {
+              appearance USE A_1
+              geometry Sphere {
+                radius 0.08
+              }
+            }
+          ]
+        }
+        DEF S_CYL7 Transform {
+          translation 0 -0.17 0.17
+          rotation 1 0 0 1.5708003061004252
+          children [
+            Shape {
+              appearance USE C1
+              geometry Cylinder {
+                height 0.2
+                radius 0.03
+              }
+            }
+          ]
+        }
+        DEF S_CYL8 Transform {
+          translation 0.34 0.17 0.17
+          rotation 1 0 0 1.5708003061004252
+          children [
+            Shape {
+              appearance USE C1
+              geometry Cylinder {
+                height 0.2
+                radius 0.03
+              }
+            }
+          ]
+        }
+        DEF S_SPHERE7 Transform {
+          translation 0.34 0.17 0.34
+          children [
+            Shape {
+              appearance USE A_1
+              geometry Sphere {
+                radius 0.08
+              }
+            }
+          ]
+        }
+        DEF S_CYL9 Transform {
+          translation 0.34 0 0.34
+          children [
+            Shape {
+              appearance USE C1
+              geometry Cylinder {
+                height 0.2
+                radius 0.03
+              }
+            }
+          ]
+        }
+        DEF S_SPHERE8 Transform {
+          translation 0.34 -0.17 0.34
+          children [
+            Shape {
+              appearance USE A_1
+              geometry Sphere {
+                radius 0.08
+              }
+            }
+          ]
+        }
+        DEF S_CYL10 Transform {
+          translation 0.34 -0.17 0.17
+          rotation 1 0 0 1.5708
+          children [
+            Shape {
+              appearance USE C1
+              geometry Cylinder {
+                height 0.2
+                radius 0.03
+              }
+            }
+          ]
+        }
+        DEF S_CYL11 Transform {
+          translation 0.17 -0.17 0.34
+          rotation 0 0 1 1.5707996938995747
+          children [
+            Shape {
+              appearance USE C1
+              geometry Cylinder {
+                height 0.2
+                radius 0.03
+              }
+            }
+          ]
+        }
+        DEF S_CYL12 Transform {
+          translation 0.17 0.17 0.34
+          rotation 0 0 1 1.5707996938995747
           children [
             Shape {
               appearance USE C1
